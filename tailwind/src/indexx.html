@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Layout</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+      <div class="wrapper">
+        <header class="bg-red-300  px-12 py-8">
+          <h1 class="font-bold text-3xl">LOGO</h1>
+          <ul class="flex">
+            <li><a href="" class="text-white px-2 mx-1 ">Home</a></li>
+            <li><a href="" class="text-white px-2 mx-1 ">About</a></li>
+            <li><a href="" class="text-white px-2 mx-1 ">Gallery</a></li>
+            <li><a href="" class="text-white px-2 mx-1 ">Blog</a></li>
+            <li><a href="" class="text-white px-2 mx-1 ">Contact Us</a></li>
+            <li>
+              <a 
+              href=""
+              class="text-black rounded bg-white px-8 py-2 mx-1 font-bold"
+              >login</a
+              >
+            </li>
+          </ul>
+        </header>
+      </div>
+  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Vertical Sidebar with Lots of Content</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="wrapper">
+    <!-- Header Section -->
+    <header class="bg-red-300 px-12 py-8">
+      <h1 class="font-bold text-3xl">LOGO</h1>
+      <ul class="flex">
+        <li><a href="#" class="text-white px-2 mx-1">Home</a></li>
+        <li><a href="#" class="text-white px-2 mx-1">About</a></li>
+        <li><a href="#" class="text-white px-2 mx-1">Gallery</a></li>
+        <li><a href="#" class="text-white px-2 mx-1">Blog</a></li>
+        <li><a href="#" class="text-white px-2 mx-1">Contact Us</a></li>
+        <li><a href="#" class="text-black rounded bg-white px-8 py-2 mx-1 font-bold">Login</a></li>
+      </ul>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="flex">
+      <!-- Sidebar (Vertical & Sticky) -->
+      <aside class="sticky top-20 w-64 bg-gray-800 text-white p-6 h-screen">
+        <h2 class="text-2xl font-bold mb-4">Navigation</h2>
+        <ul>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Dashboard</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Profile</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Settings</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Reports</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Users</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Messages</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Support</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-700 px-4">Logout</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-8">
+        <h2 class="text-3xl font-bold mb-4">Welcome to the Website</h2>
+        <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum risus id sapien tempor, eget tempor odio vehicula.</p>
+
+        <!-- Multiple Sections of Data -->
+        <section>
+          <h3 class="text-2xl font-semibold mb-4">Section 1: About Us</h3>
+          <p class="text-lg mb-6">We are a web development company focused on providing innovative and high-quality services to our clients. Our mission is to help businesses grow by creating beautiful and functional websites. We specialize in web design, development, and digital marketing. With a passion for technology and creativity, we aim to build solutions that help our clients achieve their goals.</p>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-semibold mb-4">Section 2: Our Services</h3>
+          <p class="text-lg mb-6">Our services range from website design and development to digital marketing and branding. We work closely with our clients to understand their goals and create solutions that work for them. Whether you need a simple website or a complex web application, we have the skills and expertise to deliver top-quality results. We also offer SEO optimization, content creation, and social media management to ensure your business thrives online.</p>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-semibold mb-4">Section 3: Projects & Portfolio</h3>
+          <p class="text-lg mb-6">Over the years, we've had the opportunity to work on a wide range of exciting projects. From small startups to large enterprises, we've helped businesses across different industries establish their online presence. Below are some of our featured projects:</p>
+          <ul class="list-disc pl-5">
+            <li>Project 1: E-commerce website for a fashion brand</li>
+            <li>Project 2: Real estate listing platform</li>
+            <li>Project 3: Nonprofit organization's fundraising website</li>
+            <li>Project 4: Corporate website for a financial services firm</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-semibold mb-4">Section 4: Client Testimonials</h3>
+          <p class="text-lg mb-6">Our clients love the work we do. Here are some testimonials:</p>
+          <blockquote class="border-l-4 border-red-300 pl-4 mb-6">
+            <p class="italic">"The team at [Your Company] did an amazing job designing our website. They took the time to understand our needs and created a stunning, functional site that we are extremely proud of. Their attention to detail and customer service is second to none!"</p>
+            <footer>- Client Name, Company</footer>
+          </blockquote>
+          <blockquote class="border-l-4 border-red-300 pl-4 mb-6">
+            <p class="italic">"Working with [Your Company] was an incredible experience. They helped us grow our online presence, and the results have been phenomenal. Highly recommend!"</p>
+            <footer>- Another Client Name, Company</footer>
+          </blockquote>
+        </section>
+
+        <!-- Add more sections as needed for your data -->
+        <section>
+          <h3 class="text-2xl font-semibold mb-4">Section 5: Contact Us</h3>
+          <p class="text-lg mb-6">Have questions or need more information? Feel free to reach out to us anytime!</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-6 mt-8">
+          <div class="text-center">
+            <p>&copy; 2025 Your Website. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

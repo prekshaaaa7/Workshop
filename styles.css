@@ -1,0 +1,75 @@
+*body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff6b3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .sample {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-sample1 {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-sample1:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-sample2 {
+    background-color: #e0ffe0;
+    border: 2px solid #4caf50;
+  }
+  
+  .btn-sample2:hover {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  .btn-sample3 {
+    background-color: #f0f0f0;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-sample3:hover {
+    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-sample4 {
+    background-color: #ffffff;
+    background: linear-gradient(to right, #fff 50%, #ccc 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+  }
+  
+  .btn-sample4:hover {
+    background-position: left bottom;
+    color: #000;
+  }
